@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.siju.networkresult"
+    namespace = "com.siju.networksample"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.siju.networkresult"
+        applicationId = "com.siju.networksample"
         minSdk = 30
         targetSdk = 34
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.siju.networkresult
+package com.siju.networksample
 
 import org.junit.Test
 

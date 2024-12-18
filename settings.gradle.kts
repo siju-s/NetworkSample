@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "NetworkResult"
+rootProject.name = "NetworkSample"
 include(":app")
  

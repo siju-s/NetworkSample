@@ -1,4 +1,4 @@
-package com.siju.networkresult.ui.theme
+package com.siju.networksample.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
