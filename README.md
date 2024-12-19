@@ -11,6 +11,7 @@ starts with "Item ", numeric values of `Item` was used for sorting
 - Also, total count of items are displayed for each `listId`
 
 ### Output Screenshots
+Total items which are neither null nor blank are 320 out of 1000 records
 ![localImage](./output/Screenshot_20241218_190816.png)
 ![localImage](./output/Screenshot_20241218_190840.png)
 ![localImage](./output/Screenshot_20241218_190849.png)
