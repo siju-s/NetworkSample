@@ -1,6 +1,5 @@
 package com.siju.networksample.ui.view
 
-import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -26,7 +25,6 @@ class ItemsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         groups.clear()
         // Create group data with default isCollapsed = false (expanded)
         map.toSortedMap().forEach { (listId, items) ->
-            android.util.Log.d("SS", "$listId items size:${items.size}")
             groups.add(GroupData(listId, false, items))
         }
         rebuildDisplayList()
