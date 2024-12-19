@@ -15,16 +15,14 @@ sealed class ListItem {
 
 class ItemsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    // We'll store the data in a structure of groups and flatten as needed.
     private val groups = mutableListOf<GroupData>()
 
-    // Flattened list that includes headers and items depending on collapse state.
     private val displayList = mutableListOf<ListItem>()
 
     fun submitData(map: Map<Int, List<UiItem>>) {
         groups.clear()
         // Create group data with default isCollapsed = false (expanded)
-        map.toSortedMap().forEach { (listId, items) ->
+        map.forEach { (listId, items) ->
             groups.add(GroupData(listId, false, items))
         }
         rebuildDisplayList()
@@ -73,7 +71,6 @@ class ItemsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     private fun toggleGroup(listId: Int) {
-        // Find the group and toggle its collapse state
         val group = groups.find { it.listId == listId }
         group?.let {
             it.isCollapsed = !it.isCollapsed

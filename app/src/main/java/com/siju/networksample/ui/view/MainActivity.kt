@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun observeItemsFlow() {
-        // Use lifecycleScope and repeatOnLifecycle to safely collect from Flow
+        // Safely collect from Flow
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.items.collect { groupedItems ->
